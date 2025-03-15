@@ -55,9 +55,12 @@ st.markdown("""
     The target concept is "win for x" (i.e., true when "x" has one of 8 possible ways to create a "three-in-a-row").
     The dataset has 9 features representing the Tic-Tac-Toe board and a target column indicating whether 'x' wins or not.
 """)
+st.write("ฐานข้อมูลนี้เข้ารหัสชุดค่าที่เป็นไปได้ทั้งหมดของการจัดวางกระดานในตอนจบของเกม Tic-Tac-Toe "
+"โดยสมมติให้ x เป็นผู้เล่นที่เล่นก่อนแนวคิดเป้าหมายคือ ชัยชนะของ x (เป็นจริงเมื่อ x ชนะด้วยวิธีการเรียงสามช่องติดกันในแนวตั้ง แนวนอน หรือแนวทแยง 8 รูปแบบที่เป็นไปได้)"
+"ชุดข้อมูลนี้มี 9 คุณลักษณะที่แทนตำแหน่งบนกระดาน Tic-Tac-Toe และคอลัมน์เป้าหมายที่ระบุว่า x ชนะหรือไม่")
 
 st.write("b for blank, x for x, o for o")
-
+st.title("สมมุติว่าคุณเป็น x ในเกม Tic-Tac-Toe และต้องการทราบว่าคุณจะชนะหรือไม่ และคุณเริ่มก่อน")
 uploaded_file = st.file_uploader("Choose a .data file", type=["data"])
 
 if uploaded_file is not None:

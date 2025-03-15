@@ -187,3 +187,7 @@ st.write("""
 - MNIST ใช้ Neural Network ที่ซับซ้อนขึ้น  
 - Random Forest และ Neural Network เป็นโมเดลที่ดีที่สุดสำหรับปัญหานี้
 """)
+
+st.markdown("""## โดยรวมตัวโมเดลผมได้เามาจาก Assingment ต่าง กับ chatGPT+DeepSeek ส่วนตัวของการ train model ผมก็ไปทำใน Google Colab แล้วโหลดออกมาเป็นไฟล์ .pth แล้วนำมาใช้ใน streamlit ครับ""")
+st.markdown("""## ผมไม่รู้คนอื่นเป็นไหมเเต่ผมใช้ Tensorflow ไม่ได้เลยใช้ Pytorch ครับ""")
+

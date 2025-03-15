@@ -38,7 +38,7 @@ def preprocess_image(image):
     return image
 
 st.title("🎨 วาดตัวเลข 0-9 แล้วให้โมเดลทำนาย")
-canvas = st.file_uploader("📤 อัปโหลดรูปตัวเลขที่วาด (28x28 pixels)", type=["png", "jpg", "jpeg"])
+canvas = st.file_uploader("📤 อัปโหลดรูปตัวเลขที่วาด (**28x28 pixels**)", type=["png", "jpg", "jpeg"])
 
 if canvas:
     image = Image.open(canvas)
