@@ -1,6 +1,5 @@
 import streamlit as st
 
-# ✅ ปรับแต่ง CSS ให้พื้นหลังดำ ตัวหนังสือขาว และโค้ดสีเขียว
 st.markdown("""
     <style>
         body {
@@ -19,7 +18,6 @@ st.title("📚 รายละเอียดเกี่ยวกับโม�
 
 st.write("---")
 
-## 🔍 1️⃣ **ที่มาของข้อมูล**
 st.header("📂 ที่มาของข้อมูลที่ใช้ในโปรเจกต์")
 
 st.subheader("🧩 Tic-Tac-Toe Dataset")
@@ -52,7 +50,6 @@ label, pixel1, pixel2, ..., pixel784
 
 st.write("---")
 
-## 📊 2️⃣ **การเตรียมข้อมูล**
 st.header("⚙️ การเตรียมข้อมูล")
 
 st.subheader("🔹 Tic-Tac-Toe")
@@ -87,7 +84,6 @@ y_train_tensor = torch.tensor(y_train, dtype=torch.long)
 
 st.write("---")
 
-## 🤖 3️⃣ **ทฤษฎีของอัลกอริทึมที่ใช้**
 st.header("🧠 ทฤษฎีของอัลกอริทึมที่ใช้")
 
 st.subheader("📌 Logistic Regression")
@@ -119,7 +115,6 @@ st.write("""
 
 st.write("---")
 
-## 🚀 4️⃣ **กระบวนการพัฒนาโมเดล**
 st.header("🔬 กระบวนการพัฒนาโมเดล")
 
 st.subheader("🧩 Tic-Tac-Toe")
@@ -160,13 +155,22 @@ class NeuralNet(nn.Module):
 
 st.write("---")
 
-## 📊 **ผลลัพธ์ของโมเดล**
 st.header("📈 ผลลัพธ์ของโมเดล")
 
 st.subheader("🧩 Tic-Tac-Toe")
 st.write("""
-- Random Forest มีความแม่นยำสูงสุด **93.23%**
-- Logistic Regression ทำงานได้แย่ที่สุด **69.27%**
+- Logistic Regression Accuracy: **0.6927**
+- Random Forest Accuracy: **0.9323**
+- SVM Accuracy: 0.8802
+- Gradient Boosting Accuracy: **0.9271**
+- XGBoost Accuracy: **0.8906**
+- AdaBoost Accuracy: **0.7552**
+- Random Forest Cross-Validation Accuracy: **0.7977**
+- SVM Cross-Validation Accuracy: **0.7956**
+- Gradient Boosting Cross-Validation Accuracy: **0.8228**
+- XGBoost Cross-Validation Accuracy: **0.8123**
+- AdaBoost Cross-Validation Accuracy: **0.7014**
+**ที่เลือกใช้**: Random Forest, Gradient Boosting, XGBoost,K-Nearest Neighbors,Decision Tree เพราะมีความแม่นยำสูง และเขียนง่าย
 """)
 
 st.subheader("🔢 MNIST")
